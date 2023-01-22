@@ -1,0 +1,4 @@
+.homePages{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -2,8 +2,8 @@ import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Header from './Components/Header/Header';
 import HomePage from './Pages/Home-pages/Home-page';
-import { store } from './Redux';
 import GamePage from './Pages/GamePage/GamePage';
+import { store } from './Redux';
 
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
           <Header/>
           <Routes>
             <Route exact path="/" element={<HomePage/>}/>
-            <Route  exact path="/app/:title" element={<GamePage/>}/>
+            <Route  exact  path="/app/:title" element={<GamePage/>}/>
           </Routes>
         </div>
       </BrowserRouter>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+ export default App;
